@@ -55,6 +55,10 @@ function CreateCabinForm() {
           disabled={isCreating}
           {...register("maxCapacity", {
             required: "This field is required",
+            min: {
+              value: 1,
+              message: "Capacity should be at least 1",
+            },
           })}
         />
       </FormRow>
@@ -65,6 +69,10 @@ function CreateCabinForm() {
           disabled={isCreating}
           {...register("regularPrice", {
             required: "This field is required",
+            min: {
+              value: 1,
+              message: "Price should be at least 1",
+            },
           })}
         />
       </FormRow>
