@@ -67,7 +67,6 @@ function CabinRow({ cabin }) {
     },
     onError: (error) => toast.error(error.message),
   });
-
   return (
     <TableRow role="row">
       <Img src={image} />
