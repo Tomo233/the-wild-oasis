@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 import { useSearchParams } from "react-router-dom";
 import styled, { css } from "styled-components";
@@ -48,14 +47,15 @@ function Filter({ filterField, options }) {
 
   return (
     <StyledFilter>
-      {options.map(({ value, label }) => {
+      {options.map((option) => {
         return (
           <FilterButton
-            key={value}
-            onClick={() => handleClick(value)}
-            active={value === currentFilter}
+            key={option.value}
+            onClick={() => handleClick(option.value)}
+            active={option.value === currentFilter}
+            disabled={option.value === currentFilter}
           >
-            {label}
+            {option.label}
           </FilterButton>
         );
       })}
