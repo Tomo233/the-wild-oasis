@@ -1,5 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable react/prop-types */
 import styled from "styled-components";
 
 import CreateCabinForm from "./CreateCabinForm";
@@ -53,7 +51,7 @@ const Discount = styled.div`
 
 function CabinRow({ cabin }) {
   const { isDeleting, deleteCabin } = useDeleteCabin();
-  const { isCreating, createCabin } = useCreateCabin();
+  const { /* isCreating */ createCabin } = useCreateCabin();
 
   const {
     id: cabinId,

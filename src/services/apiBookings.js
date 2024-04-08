@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { getToday } from "../utils/helpers";
 import supabase from "./supabase";
 import { PAGE_SIZE } from "../utils/constants";
