@@ -118,7 +118,6 @@ function BookingDataBox({ booking }) {
     guests: { fullName: guestName, email, country, countryFlag, nationalID },
     cabins: { name: cabinName },
   } = booking;
-
   return (
     <StyledBookingDataBox>
       <Header>
