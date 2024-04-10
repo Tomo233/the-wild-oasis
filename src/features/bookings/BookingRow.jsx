@@ -53,6 +53,7 @@ function BookingRow({
   },
 }) {
   const navigate = useNavigate();
+
   const statusToTagName = {
     unconfirmed: "blue",
     "checked-in": "green",
